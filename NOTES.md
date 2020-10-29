@@ -1,13 +1,29 @@
+## Overview:
+- Smooth online and offline experiences. Indistinguishable from an app.
 - And you can "progressively" enhance existing Websites.
-1. Technical Overview:
-2. Lesson Structure:
-    - Latest Chrome. Mobile layout. Simply static file server.
+- The future of apps as we know it.
+- Technical Overview:
+    - Websites as we know them.
+    - Service Workers:
+        1. Proxy object. Intercept requests and respond accordingly.
+        2. Secure connection. Always. Only exception is localhost.
+        3. Fetch method. And promises, not callbacks.
+        4. If a browser supports a service worker, it will support fetch and promises.
+    - App shell:
+        - Abstracting content. Load dynamic content.
+    - App Manifest:
+        - From webpage to entity.
+- Lesson Structure:
+    - Latest Chrome browser as it offers the best development tools.
+    - Mobile layout. Simple static file server. Turn on device frame.
+    - Chrome webserver extension.
+    
+## Service Worker:
+- Service Worker API.
+- Proxy object that sits between the application the the network.
+- They require a secure connection as we constantly modify service requests. 
+- BUT... an usecure localhost is allowed. Use Fetch and Promise.
 
-- Service Workers:
-    1. Proxy object. Intercept requests and respond accordingly.
-    2. Secure connection. Always. Only exception is localhost.
-    3. fetch method. And promises, not callbacks.
-    4. If a browser supports a service worker, it will support fetch and promises.
 
 - Promises:
     - Classic callback:
